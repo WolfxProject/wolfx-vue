@@ -231,6 +231,7 @@
         </div>
 
         <div>
+          <a href="https://afdian.com/a/wolfx" target="_blank" rel="noopener">Donate</a>&nbsp;
           <a href="https://status.wolfx.jp" target="_blank" rel="noopener">Service status</a>
         </div>
 
