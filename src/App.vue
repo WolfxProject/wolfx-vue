@@ -228,6 +228,7 @@
       <v-container class="text-overline d-flex align-center justify-space-between">
         <div>
           Copyright &copy; 2017-{{ (new Date()).getFullYear() }} Wolfx Project
+          <div>Links <a href="https://www.yorushi.com/" target="_blank" rel="noopener">夜曦的blog站点</a></div>
         </div>
 
         <div>
