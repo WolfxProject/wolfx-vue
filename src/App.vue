@@ -192,23 +192,23 @@
                   width="350"
                 >
                   <h2 class="text-h4">
-                    Wolfx Survival
+                    Wolfx SeisJS
                   </h2>
 
                   <p class="text-success mt-3">
-                    {{ $t('wolfxmcIntroduce1') }}
+                    {{ $t('seisjsIntroduce1') }}
                   </p>
 
                   <p class="mt-3">
-                    {{ $t('wolfxmcIntroduce2') }}
+                    {{ $t('seisjsIntroduce2') }}
                   </p>
 
                   <v-btn-alt
                     class="mt-6 "
-                    href="https://mc.wolfx.jp"
+                    href="https://wolfx.jp/seisjs/"
                     target="_blank"
                     rel="noopener"
-                    :text="$t('wolfxmcDoc')"
+                    :text="$t('seisjsDoc')"
                   />
                 </v-responsive>
               </v-col>
@@ -216,7 +216,7 @@
               <v-img
                 max-width="400"
                 max-height="350"
-                src="https://mc.wolfx.jp/images/bg.jpg"
+                src="images/seisJS.png"
               />
             </v-row>
           </v-container>
@@ -228,7 +228,9 @@
       <v-container class="text-overline d-flex align-center justify-space-between">
         <div>
           Copyright &copy; 2017-{{ (new Date()).getFullYear() }} Wolfx Project
-          <div>Links <a href="https://www.yorushi.com/" target="_blank" rel="noopener">夜曦的blog站点</a></div>
+          <div>Links <a href="https://www.yorushi.com/" target="_blank" rel="noopener">
+            {{ $t('link1') }}
+          </a></div>
         </div>
 
         <div>
