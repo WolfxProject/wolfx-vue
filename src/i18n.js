@@ -66,7 +66,7 @@ i18next
           seisjsIntroduce1: 'Wolfx SeisJS Monitor',
           seisjsIntroduce2: 'SeisJS is a project that utilizes the accelerometers of mobile devices for earthquake observation and provides aggregated APIs through networking',
           seisjsDoc: 'Join Now',
-          link1: 'Yorushi\'s blog site',
+          link1: 'Yorushi\'s blog',
         },
       },
     },

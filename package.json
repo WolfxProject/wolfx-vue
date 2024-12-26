@@ -14,7 +14,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mdi/font": "5.9.55",
+    "@mdi/font": "^5.9.55",
     "i18next": "^23.16.8",
     "i18next-browser-languagedetector": "^7.2.2",
     "i18next-vue": "^4.0.0",
