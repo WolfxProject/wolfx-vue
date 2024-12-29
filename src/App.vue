@@ -230,6 +230,8 @@
           Copyright &copy; 2017-{{ (new Date()).getFullYear() }} Wolfx Project
           <div>Links <a href="https://www.yorushi.com/" target="_blank" rel="noopener">
             {{ $t('link1') }}
+          </a> <a href="https://bousai.cn/" target="_blank" rel="noopener">
+            {{ $t('link2') }}
           </a></div>
         </div>
 

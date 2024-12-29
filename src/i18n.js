@@ -25,6 +25,7 @@ i18next
           seisjsIntroduce2: 'SeisJS 是一个利用移动设备加速度计进行地震观测的项目，并透过网络提供公开 API 服务',
           seisjsDoc: '立即加入',
           link1: '夜曦的blog站点',
+          link2: 'RC的站点',
         },
       },
       ja: {
@@ -46,6 +47,7 @@ i18next
           seisjsIntroduce2: 'SeisJSは、モバイルデバイスの加速度計を利用して地震観測を行い、ネットワーク化して集計APIを提供するプロジェクトです',
           seisjsDoc: '今すぐ参加',
           link1: '夜曦のblog',
+          link2: 'RCのサイト',
         },
       },
       en: {
@@ -67,6 +69,7 @@ i18next
           seisjsIntroduce2: 'SeisJS is a project that utilizes the accelerometers of mobile devices for earthquake observation and provides aggregated APIs through networking',
           seisjsDoc: 'Join Now',
           link1: 'Yorushi\'s blog',
+          link2: 'RC\'s site',
         },
       },
     },
