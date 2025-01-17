@@ -232,6 +232,8 @@
             {{ $t('link1') }}
           </a> <a href="https://bousai.cn/" target="_blank" rel="noopener">
             {{ $t('link2') }}
+          </a> <a href="https://n0w0n.com/" target="_blank" rel="noopener">
+            {{ $t('link3') }}
           </a></div>
         </div>
 

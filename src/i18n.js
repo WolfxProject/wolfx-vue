@@ -26,6 +26,7 @@ i18next
           seisjsDoc: '立即加入',
           link1: '夜曦的blog站点',
           link2: 'RC的站点',
+          link3: 'The [object Object]',
         },
       },
       ja: {
@@ -48,6 +49,7 @@ i18next
           seisjsDoc: '今すぐ参加',
           link1: '夜曦のblog',
           link2: 'RCのサイト',
+          link3: 'The [object Object]',
         },
       },
       en: {
@@ -70,6 +72,7 @@ i18next
           seisjsDoc: 'Join Now',
           link1: 'Yorushi\'s blog',
           link2: 'RC\'s site',
+          link3: 'The [object Object]',
         },
       },
     },
