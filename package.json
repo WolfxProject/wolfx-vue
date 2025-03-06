@@ -14,30 +14,36 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mdi/font": "^5.9.55",
-    "i18next": "^23.16.8",
-    "i18next-browser-languagedetector": "^7.2.2",
-    "i18next-vue": "^4.0.0",
+    "@mdi/font": "^7.4.47",
+    "i18next": "^24.2.2",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "i18next-vue": "^5.2.0",
     "roboto-fontface": "^0.10.0",
     "vue": "^3.5.13",
-    "vuetify": "^3.7.6",
+    "vuetify": "^3.7.15",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "@eslint/js": "^9.18.0",
-    "@vitejs/plugin-vue": "^3.2.0",
-    "archiver": "^5.3.2",
-    "conventional-changelog": "^4.0.0",
+    "@eslint/js": "^9.21.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "archiver": "^7.0.1",
+    "conventional-changelog": "^6.0.0",
     "eslint": "^8.57.1",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.6.0",
-    "eslint-plugin-vue": "^9.32.0",
-    "globals": "^15.14.0",
+    "eslint-plugin-vue": "^9.33.0",
+    "globals": "^16.0.0",
     "shelljs": "^0.8.5",
-    "vite": "^3.2.11",
+    "vite": "^6.2.0",
     "vite-plugin-eslint": "^1.8.1",
-    "vite-plugin-vuetify": "^1.0.2"
+    "vite-plugin-vuetify": "^2.1.0",
+    "vue-eslint-parser": "^10.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
