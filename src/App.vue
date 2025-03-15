@@ -239,7 +239,7 @@
 
         <div>
           <a href="https://github.com/WolfxProject" target="_blank" rel="noopener">Github</a>&nbsp;
-          <a href="https://afdian.com/a/wolfx" target="_blank" rel="noopener">Donate</a>&nbsp;
+          <a href="https://wolfx.jp/donate" target="_blank" rel="noopener">Donate</a>&nbsp;
           <a href="https://status.wolfx.jp" target="_blank" rel="noopener">Service status</a>
         </div>
 
