@@ -20,26 +20,26 @@
     "i18next-vue": "^5.2.0",
     "roboto-fontface": "^0.10.0",
     "vue": "^3.5.13",
-    "vuetify": "^3.7.16",
+    "vuetify": "^3.8.0",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
-    "@vitejs/plugin-vue": "^5.2.1",
+    "@eslint/js": "^9.23.0",
+    "@vitejs/plugin-vue": "^5.2.3",
     "archiver": "^7.0.1",
     "conventional-changelog": "^6.0.0",
-    "eslint": "^9.22.0",
+    "eslint": "^9.23.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-n": "^17.16.2",
+    "eslint-plugin-n": "^17.17.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-vue": "^10.0.0",
     "globals": "^16.0.0",
-    "shelljs": "^0.9.1",
-    "vite": "^6.2.2",
+    "shelljs": "^0.9.2",
+    "vite": "^6.2.5",
     "vite-plugin-eslint": "^1.8.1",
-    "vite-plugin-vuetify": "^2.1.0",
-    "vue-eslint-parser": "^10.1.1"
+    "vite-plugin-vuetify": "^2.1.1",
+    "vue-eslint-parser": "^10.1.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
