@@ -22,10 +22,7 @@
         <v-sheet class="d-flex align-center pb-16" color="grey-darken-3">
           <v-container class="text-center">
             <v-responsive class="mx-auto" width="500">
-              <v-img
-                src=""
-                height="100"
-              />
+              <v-img src="" height="100" />
 
               <h3 class="text-h3">
                 Wolfx Project
@@ -197,6 +194,16 @@
         <!--<v-icon icon="$vuetify" size="x-large" />-->
       </v-container>
     </v-footer>
+    <div v-if="showIframe"
+      style="position: fixed; bottom: 2px; right: -8px; width: 16.5rem; height: 15em; border-top-left-radius: 12px; overflow: hidden; z-index: 1000;">
+      <iframe src="https://support.nodeget.com/page/promotion?id=TenkyuChimata"
+        style="width: 100%; height: 100%; border: none;"></iframe>
+
+      <button @click="showIframe = false" style="position: absolute; top: 8px; right: 12px; background: rgba(255,255,255,0.8); border: none; border-radius: 50%;
+           width: 20px; height: 20px; font-size: 14px; font-weight: bold; cursor: pointer;">
+        ×
+      </button>
+    </div>
   </v-app>
 </template>
 
@@ -211,6 +218,7 @@ export default {
         en: { nativeName: 'English | Lang' },
       },
       currentLanguageCode: 'ja',
+      showIframe: true,
     }
   },
   computed: {
