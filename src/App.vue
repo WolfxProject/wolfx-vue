@@ -160,8 +160,15 @@
                     {{ $t('seisjsIntroduce2') }}
                   </p>
 
-                  <v-btn-alt class="mt-6 " href="https://wolfx.jp/seisjs/" target="_blank" rel="noopener"
-                    :text="$t('seisjsDoc')" />
+                  <div class="d-flex ga-4 mt-6">
+                    <v-btn color="primary" href="https://wolfx.jp/seisjs/" target="_blank" rel="noopener">
+                      {{ $t('seisjsDoc') }}
+                    </v-btn>
+                    <v-btn color="primary" href="https://wolfx.jp/ssv/" target="_blank" rel="noopener">
+                      {{ $t('ssvDoc') }}
+                    </v-btn>
+                  </div>
+
                 </v-responsive>
               </v-col>
 
