@@ -240,6 +240,24 @@ export default {
       this.currentLanguageCode = codes[(index + 1) % codes.length]
       this.$i18next.changeLanguage(this.currentLanguageCode)
     },
+    async detectLanguageByIP() {
+      try {
+        const response = await fetch('https://api.wolfx.jp/geoip.php')
+        const data = await response.json()
+        if (data.country_code === 'CN') {
+          this.currentLanguageCode = 'zh-CN'
+        } else {
+          this.currentLanguageCode = 'ja'
+        }
+        this.$i18next.changeLanguage(this.currentLanguageCode)
+      } catch (error) {
+        console.warn('Fallback to JA. ', error)
+        this.$i18next.changeLanguage(this.currentLanguageCode)
+      }
+    },
+  },
+  mounted() {
+    this.detectLanguageByIP()
   },
 }
 </script>
