@@ -224,7 +224,7 @@ export default {
         'zh-CN': { nativeName: '简体中文 | Lang' },
         en: { nativeName: 'English | Lang' },
       },
-      currentLanguageCode: 'ja',
+      currentLanguageCode: 'en',
       showIframe: true,
     }
   },
@@ -240,24 +240,24 @@ export default {
       this.currentLanguageCode = codes[(index + 1) % codes.length]
       this.$i18next.changeLanguage(this.currentLanguageCode)
     },
-    async detectLanguageByIP() {
-      try {
-        const response = await fetch('https://api.wolfx.jp/geoip.php')
-        const data = await response.json()
-        if (data.country_code === 'CN') {
-          this.currentLanguageCode = 'zh-CN'
-        } else {
+    detectBrowserLanguage() {
+      const preferredLanguages = navigator.languages || [navigator.language || navigator.userLanguage]
+      for (const lang of preferredLanguages) {
+        if (lang.startsWith('ja')) {
           this.currentLanguageCode = 'ja'
+          break
+        } else if (lang.startsWith('zh')) {
+          this.currentLanguageCode = 'zh-CN'
+          break
+        } else {
+          this.currentLanguageCode = 'en'
         }
-        this.$i18next.changeLanguage(this.currentLanguageCode)
-      } catch (error) {
-        console.warn('Fallback to JA. ', error)
-        this.$i18next.changeLanguage(this.currentLanguageCode)
       }
+      this.$i18next.changeLanguage(this.currentLanguageCode)
     },
   },
   mounted() {
-    this.detectLanguageByIP()
+    this.detectBrowserLanguage()
   },
 }
 </script>
