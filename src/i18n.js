@@ -28,6 +28,8 @@ i18next
           link1: '夜曦的blog站点',
           link2: 'RC的站点',
           link3: 'The [object Object]',
+          PrivacyPolicy: '隐私政策',
+          TOS: '服务条款',
         },
       },
       ja: {
@@ -52,6 +54,8 @@ i18next
           link1: '夜曦のblog',
           link2: 'RCのサイト',
           link3: 'The [object Object]',
+          PrivacyPolicy: 'プライバシーポリシー',
+          TOS: '利用規約',
         },
       },
       en: {
@@ -76,6 +80,8 @@ i18next
           link1: 'Yorushi\'s blog',
           link2: 'RC\'s site',
           link3: 'The [object Object]',
+          PrivacyPolicy: 'Privacy Policy',
+          TOS: 'TOS',
         },
       },
     },

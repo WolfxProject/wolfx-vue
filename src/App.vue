@@ -62,7 +62,9 @@
                     {{ $t('WolfxOpenApiIntroduce4') }}
                   </p>
 
-                  <v-btn class="mt-6" href="https://wolfx.jp/apidoc" target="_blank" rel="noopener">
+                  <v-btn class="mt-6" :href="currentLanguageCode === 'ja' ? 'https://wolfx.jp/apidoc?nodetect' :
+                    currentLanguageCode === 'zh-CN' ? 'https://wolfx.jp/apidoc_zh' :
+                      'https://wolfx.jp/apidoc_en'" target="_blank" rel="noopener">
                     {{ $t('OpenApiDoc') }}
                   </v-btn>
                 </v-responsive>
@@ -161,10 +163,10 @@
                   </p>
 
                   <div class="d-flex ga-4 mt-6">
-                    <v-btn color="primary" href="https://wolfx.jp/seisjs/" target="_blank" rel="noopener">
+                    <v-btn color="primary" href="https://wolfx.jp/seisjs" target="_blank" rel="noopener">
                       {{ $t('seisjsDoc') }}
                     </v-btn>
-                    <v-btn color="primary" href="https://wolfx.jp/ssv/" target="_blank" rel="noopener">
+                    <v-btn color="primary" href="https://wolfx.jp/ssv" target="_blank" rel="noopener">
                       {{ $t('ssvDoc') }}
                     </v-btn>
                   </div>
@@ -183,11 +185,20 @@
       <v-container class="text-overline d-flex align-center justify-space-between">
         <div>
           Copyright &copy; 2017-{{ (new Date()).getFullYear() }} Wolfx Project
-          <div>Links <a href="https://www.yorushi.com/" target="_blank" rel="noopener">
+          <a :href="currentLanguageCode === 'ja' ? 'https://wolfx.jp/privacy_policy' :
+            currentLanguageCode === 'zh-CN' ? 'https://wolfx.jp/privacy_policy_zh' :
+              'https://wolfx.jp/privacy_policy_en'" target="_blank" rel="noopener">
+            {{ $t('PrivacyPolicy') }}
+          </a> <a :href="currentLanguageCode === 'ja' ? 'https://wolfx.jp/tos' :
+            currentLanguageCode === 'zh-CN' ? 'https://wolfx.jp/tos_zh' :
+              'https://wolfx.jp/tos_en'" target="_blank" rel="noopener">
+            {{ $t('TOS') }}
+          </a>
+          <div>Links <a href="https://www.yorushi.com" target="_blank" rel="noopener">
               {{ $t('link1') }}
-            </a> <a href="https://bousai.cn/" target="_blank" rel="noopener">
+            </a> <a href="https://bousai.cn" target="_blank" rel="noopener">
               {{ $t('link2') }}
-            </a> <a href="https://n0w0n.com/" target="_blank" rel="noopener">
+            </a> <a href="https://n0w0n.com" target="_blank" rel="noopener">
               {{ $t('link3') }}
             </a></div>
         </div>
