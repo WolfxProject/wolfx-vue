@@ -232,7 +232,7 @@ export default {
     return {
       languages: {
         ja: { nativeName: '日本語 | Lang' },
-        'zh-CN': { nativeName: '简体中文 | Lang' },
+        zh: { nativeName: '简体中文 | Lang' },
         en: { nativeName: 'English | Lang' },
       },
       currentLanguageCode: 'en',
@@ -250,6 +250,7 @@ export default {
       const index = codes.indexOf(this.currentLanguageCode)
       this.currentLanguageCode = codes[(index + 1) % codes.length]
       this.$i18next.changeLanguage(this.currentLanguageCode)
+      document.documentElement.lang = this.currentLanguageCode;
     },
     detectBrowserLanguage() {
       const preferredLanguages = navigator.languages || [navigator.language || navigator.userLanguage]
@@ -258,13 +259,14 @@ export default {
           this.currentLanguageCode = 'ja'
           break
         } else if (lang.startsWith('zh')) {
-          this.currentLanguageCode = 'zh-CN'
+          this.currentLanguageCode = 'zh'
           break
         } else {
           this.currentLanguageCode = 'en'
         }
       }
       this.$i18next.changeLanguage(this.currentLanguageCode)
+      document.documentElement.lang = this.currentLanguageCode;
     },
   },
   mounted() {

@@ -6,7 +6,7 @@ i18next
     debug: false,
     fallbackLng: 'ja',
     resources: {
-      'zh-CN': {
+      zh: {
         translation: {
           OpenApiDoc: 'API 调用文档',
           WolfxIntroduce: 'Wolfx Project 是一个公益项目, 旨在免费提供各种实用服务。',
