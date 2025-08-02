@@ -194,13 +194,14 @@
               'https://wolfx.jp/tos_en'" target="_blank" rel="noopener">
             {{ $t('TOS') }}
           </a>
-          <div>Links <a href="https://www.yorushi.com" target="_blank" rel="noopener">
+          <div>Links <a href="https://blog.yorushi.top" target="_blank" rel="noopener">
               {{ $t('link1') }}
             </a> <a href="https://bousai.cn" target="_blank" rel="noopener">
               {{ $t('link2') }}
             </a> <a href="https://n0w0n.com" target="_blank" rel="noopener">
               {{ $t('link3') }}
-            </a></div>
+            </a>
+          </div>
         </div>
 
         <div>
