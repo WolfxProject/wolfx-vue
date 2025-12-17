@@ -200,8 +200,10 @@
               {{ $t('link2') }}
             </a> <a href="https://n0w0n.com" target="_blank" rel="noopener">
               {{ $t('link3') }}
-            </a> <a href="https://ntp.wolfx.jp" target="_blank" rel="noopener">
+            </a> <a href="https://rainsummer.top" target="_blank" rel="noopener">
               {{ $t('link4') }}
+            </a> <a href="https://ntp.wolfx.jp" target="_blank" rel="noopener">
+              {{ $t('link5') }}
             </a>
           </div>
         </div>
