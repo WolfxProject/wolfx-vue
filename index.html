@@ -1,20 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <link rel="icon" href="images/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Wolfx" />
-  <meta name="robots" content="index,follow" />
-  <meta name="keywords" content="API,接口,地震,EEW,JMA,日本,緊急地震速報,IP,二次元,图片,随机,四川,中国,CENC,免费" />
-  <title>Wolfx Project</title>
-</head>
+    <!-- ===== 基础 SEO ===== -->
+    <title>Wolfx Project｜地震・緊急地震速報（EEW）・防災API</title>
 
-<body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
-</body>
+    <meta
+      name="description"
+      content="Wolfx Project は地震・緊急地震速報（EEW）を中心とした防災向けプロジェクトです。Open API（HTTP/JSON・WebSocket）、リアルタイム地震監視、SeisJS などを無料で提供しています。"
+    />
 
+    <meta
+      name="keywords"
+      content="Wolfx Project,地震,緊急地震速報,EEW,防災API,JMA,CENC,USGS,WebSocket,JSON,リアルタイム地震監視,SeisJS"
+    />
+
+    <meta name="author" content="Wolfx" />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+
+    <!-- ===== Canonical / hreflang ===== -->
+    <link rel="canonical" href="https://wolfx.jp/" />
+
+    <!-- 主站为日语，其它语言为辅助（若无可索引 URL，可只保留 ja + x-default） -->
+    <link rel="alternate" hreflang="ja" href="https://wolfx.jp/" />
+    <link rel="alternate" hreflang="x-default" href="https://wolfx.jp/" />
+
+    <!-- ===== Open Graph ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Wolfx Project" />
+    <meta
+      property="og:title"
+      content="Wolfx Project｜地震・緊急地震速報（EEW）・防災API"
+    />
+    <meta
+      property="og:description"
+      content="地震・EEW 向けの Open API、リアルタイム地震監視、SeisJS を提供する防災プロジェクト。"
+    />
+    <meta property="og:url" content="https://wolfx.jp/" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wolfx Project｜地震・EEW・防災API" />
+    <meta
+      name="twitter:description"
+      content="地震・緊急地震速報（EEW）向け Open API とリアルタイム監視ツール。"
+    />
+
+    <!-- ===== Icons ===== -->
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
+
+    <!-- ===== Performance ===== -->
+    <link rel="preconnect" href="https://r2.wolfx.jp" crossorigin />
+    <link rel="dns-prefetch" href="//r2.wolfx.jp" />
+    <link rel="preload" as="image" href="images/logo.png" />
+    <link rel="preload" as="image" href="images/API.png" />
+
+    <!-- ===== Structured Data ===== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Wolfx Project",
+        "url": "https://wolfx.jp/",
+        "description": "地震・緊急地震速報（EEW）を中心とした防災向けプロジェクト。Open API、リアルタイム地震監視、SeisJS を提供。",
+        "inLanguage": "ja",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Wolfx Project"
+        }
+      }
+    </script>
+
+    <!-- SPA 用：検索エンジン向けの不可視テキスト -->
+    <style>
+      .seo-fallback {
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===== SEO fallback（重要） ===== -->
+    <div class="seo-fallback">
+      <h1>Wolfx Project</h1>
+      <p>
+        Wolfx Project
+        は地震・緊急地震速報（EEW）を中心とした防災向けプロジェクトです。 Open
+        API、リアルタイム地震監視、SeisJS などを提供しています。
+      </p>
+      <ul>
+        <li>
+          <a href="https://wolfx.jp/apidoc">Wolfx Open API ドキュメント</a>
+        </li>
+        <li>
+          <a href="https://bs.wolfx.jp/about.html"
+            >リアルタイム地震監視（WREM）</a
+          >
+        </li>
+        <li><a href="https://wolfx.jp/seisjs">Wolfx SeisJS</a></li>
+        <li><a href="https://acg.kr">ACG.kr URL Shortener</a></li>
+        <li><a href="https://status.wolfx.jp">Service Status</a></li>
+        <li><a href="https://github.com/WolfxProject">GitHub</a></li>
+      </ul>
+    </div>
+
+    <!-- ===== No-JS fallback ===== -->
+    <noscript>
+      <div
+        style="
+          padding: 16px;
+          font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+            Arial;
+        "
+      >
+        <h1>Wolfx Project</h1>
+        <p>
+          本サイトは JavaScript を使用しています。以下のリンクをご利用ください。
+        </p>
+        <ul>
+          <li><a href="https://wolfx.jp/apidoc">Open API ドキュメント</a></li>
+          <li>
+            <a href="https://bs.wolfx.jp/about.html">リアルタイム地震監視</a>
+          </li>
+          <li><a href="https://wolfx.jp/seisjs">SeisJS</a></li>
+          <li><a href="https://status.wolfx.jp">Service Status</a></li>
+        </ul>
+      </div>
+    </noscript>
+
+    <!-- ===== SPA Root ===== -->
+    <div id="app"></div>
+
+    <!-- ===== App Entry ===== -->
+    <script type="module" src="/src/main.js" crossorigin="anonymous"></script>
+  </body>
 </html>
